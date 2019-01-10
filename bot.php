@@ -48,15 +48,15 @@ function shalat($keyword) {
 	$result .= $json['location']['address'];
 	$result .= "\nTanggal : ";
 	$result .= $json['time']['date'];
-	$result .= "\n\nShubuh  : ";
+	$result .= "\n\nShubuh : ";
 	$result .= $json['data']['Fajr'];
 	$result .= "\nDzuhur  : ";
 	$result .= $json['data']['Dhuhr'];
-	$result .= "\nAshar   : ";
+	$result .= "\nAshar    : ";
 	$result .= $json['data']['Asr'];
 	$result .= "\nMaghrib : ";
 	$result .= $json['data']['Maghrib'];
-	$result .= "\nIsya    : ";
+	$result .= "\nIsya      : ";
 	$result .= $json['data']['Isha'];
     return $result;
 }
@@ -70,7 +70,7 @@ function shalat($keyword) {
 
 //show menu, saat join dan command /menu
 if ($type == 'join' || $command == '/menu') {
-    $text = "Assalamualaikum Kakak, aku adalah bot jadwal shalat, silahkan ketik\n\n/shalat <nama tempat>\n\nnanti aku bakalan kasih tahu jam berapa waktunya shalat ^_^";
+    $text = "Assalamualaikum SObat Kang Mus! Yuk cari tahu jadwal sholat di kotamu dengan mengetik\n\n/shalat <nama tempat>\n\nnanti Kang Mus kasih tahu jam berapa waktunya shalat ^_^";
     $balas = array(
         'replyToken' => $replyToken,
         'messages' => array(
@@ -105,7 +105,7 @@ if($message['type']=='text') {
 							'messages' => array(
 								array(
 										'type' => 'text',									
-										'text' => 'Makasih Kak Stikernya ^_^'										
+										'text' => ''										
 									
 									)
 							)
