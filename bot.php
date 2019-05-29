@@ -70,7 +70,7 @@ function shalat($keyword) {
 
 //show menu, saat join dan command /menu
 if ($type == 'join' || $command == '/menu') {
-    $text = "Assalamualaikum SObat Kang Mus! Yuk cari tahu jadwal sholat di kotamu dengan mengetik\n\n/shalat <nama tempat>\n\nnanti Kang Mus kasih tahu jam berapa waktunya shalat ^_^";
+    $text = "Assalamualaikum Sobat Kang Mus! Yuk cari tahu jadwal sholat di kotamu dengan mengetik\n\n/shalat <nama tempat>\n\nnanti Kang Mus kasih tahu jam berapa waktunya shalat ^_^";
     $balas = array(
         'replyToken' => $replyToken,
         'messages' => array(
